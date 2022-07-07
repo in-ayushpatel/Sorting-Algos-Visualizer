@@ -1,0 +1,21 @@
+.array_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+}
+
+.array_item{
+    background-color: pink;
+    width: 10px;
+    border: .1px solid black;
+}
+
+.header{
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+}
