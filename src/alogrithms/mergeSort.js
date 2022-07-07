@@ -20,25 +20,25 @@ function merge_sort(start,mid,end, array){
     for(var i=start; i<=end; i++){
         if(p>mid){
             temp_arr[k++]=array[q++];
-            visualizer(q-1,array[q-1],"red", c_delay+=speed);//Color update
+            visualizer(q-1,array[q-1],"red", c_delay+=speed);//Color 
         }
         else if(q>end){
             temp_arr[k++]=array[p++];
-            visualizer(p-1,array[p-1],"red", c_delay+=speed);//Color update
+            visualizer(p-1,array[p-1],"red", c_delay+=speed);//Color 
         }
         else if(array[p]<array[q]){
             temp_arr[k++]=array[p++];
-            visualizer(p-1,array[p-1],"red", c_delay+=speed);//Color update
+            visualizer(p-1,array[p-1],"red", c_delay+=speed);//Color 
         }
         else{
             temp_arr[k++]=array[q++];
-            visualizer(q-1,array[q-1],"red", c_delay+=speed);//Color update
+            visualizer(q-1,array[q-1],"red", c_delay+=speed);//Color 
         }
     }
 
     for(var t=0;t<k;t++){
         array[start++]=temp_arr[t];
-        visualizer(start-1,array[start-1],"green", c_delay+=speed);//Color update
+        visualizer(start-1,array[start-1],"green", c_delay+=speed);//Color 
     }
 }
 
@@ -46,7 +46,7 @@ function merge_partition(start,end, array){
     if(start < end)
     {
         var mid=Math.floor((start + end) / 2);
-        visualizer(mid,array[mid],"yellow", c_delay+=speed);//Color update
+        visualizer(mid,array[mid],"yellow", c_delay+=speed);//Color 
 
         merge_partition(start,mid, array);
         merge_partition(mid+1,end, array);
