@@ -5,6 +5,9 @@ import './main.css';
 import {randArray, selectAlgo, resetColor, speedSelect, sortingUpdate} from '../reducer/sortingSlice';
 import bubbleSortAlgo from '../alogrithms/bubbleSort'
 import mergeSortAlgo from '../alogrithms/mergeSort'
+import selectionSortAlgo from '../alogrithms/selectionSort'
+import quickSortAlgo from '../alogrithms/quickSort'
+import insertionSortAlgo from '../alogrithms/insertionSort'
 
 function Home() {
     const array = useSelector(state => state.data.array);
@@ -41,11 +44,22 @@ function Home() {
         }else if (algorithm === 'mergeSort'){
             mergeSortAlgo(array.length, array, speed, dispatch);
             dispatch(sortingUpdate(true));
+        }else if (algorithm === 'selectionSort'){
+            selectionSortAlgo(array.length, array, speed, dispatch);
+            dispatch(sortingUpdate(true));
+        }else if (algorithm === 'quickSort'){
+            quickSortAlgo(array.length, array, speed, dispatch);
+            dispatch(sortingUpdate(true));
+        }else if (algorithm === 'insertionSort'){
+            insertionSortAlgo(array.length, array, speed, dispatch);
+            dispatch(sortingUpdate(true));
         }
+        
     }
 
     const handleSpeedChange = (e) => {
-        dispatch(speedSelect(e.target.value));
+        const speed = Math.abs(100 - e.target.value)
+        dispatch(speedSelect(speed));
     }
 
     return (
@@ -56,7 +70,7 @@ function Home() {
                     id="changeSize"
                     type="range"
                     min="10"
-                    max="80"
+                    max="90"
                     disabled={isSorting}
                     defaultValue={size}
                     style={{background: "blue", cursor: "pointer"}}
@@ -78,6 +92,9 @@ function Home() {
                 <select name="also-select" onChange={(e) => algorithmSelector(e)} disabled={isSorting}> 
                     <option value="bubbleSort" >Bubble Sort</option>
                     <option value="mergeSort" >Merge Sort</option>
+                    <option value="selectionSort" >Selection Sort</option>
+                    <option value="quickSort" >Quick Sort</option>
+                    <option value="insertionSort" >Insertion Sort</option>
                 </select>
 
                 <button onClick={() => playAlgo()} id= 'play' disabled={isSorting}> Play </button>
