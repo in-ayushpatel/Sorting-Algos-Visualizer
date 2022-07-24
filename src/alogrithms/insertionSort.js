@@ -21,7 +21,7 @@ function insertionSortAlgo(n, arr, sp, dispatch) {
             visualizer(i+1, array[i+1], "red", c_delay+=speed);//Height 
     
             visualizer(i, array[i], "blue", c_delay+=speed);//Color 
-            if(i==(j-1)){
+            if(i===(j-1)){
                 visualizer(i+1, array[i+1], "yellow", c_delay+=speed);//Color 
             }
             else{
