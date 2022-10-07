@@ -20,7 +20,7 @@ function Home() {
     const dispatch = useDispatch();
     const randomArrayGenerator = () => {
         dispatch(randArray(size));
-        dispatch(resetColor('pink'));
+        dispatch(resetColor('#256D85'));
     }
 
     useEffect(() =>{

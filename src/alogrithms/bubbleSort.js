@@ -18,11 +18,11 @@ function bubbleSortAlgo(n, arr, sp, dispatch) {
                 visualizer(j,array[j], "red", c_delay);//Height 
                 visualizer(j+1,array[j+1], "red", c_delay+=speed);//Height 
             }
-            visualizer(j,array[j], "blue", c_delay+=speed);//Color 
+            visualizer(j,array[j], "#06283D", c_delay+=speed);//Color 
         }
-        visualizer(j,array[j], "green", c_delay+=speed);//Color 
+        visualizer(j,array[j], "#47B5FF", c_delay+=speed);//Color 
     }
-    visualizer(0,array[0], "green", c_delay+=speed);//Color 
+    visualizer(0,array[0], "#47B5FF", c_delay+=speed);//Color 
     
     
     setTimeout(() => {
