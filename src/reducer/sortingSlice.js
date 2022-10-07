@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
   array: [],
   algorithm: 'bubbleSort',
-  color: 'pink',
+  color: '#256D85',
   speed: 20,
   isSorting: false,
 }

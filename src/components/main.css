@@ -1,3 +1,9 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: #DFF6FF;
+}
 .array_container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8,14 +14,15 @@
 }
 
 .array_item{
-    background-color: pink;
+    background-color: #256D85;
     width: 10px;
     border: .1px solid black;
 }
 
 .header{
-    height: 30px;
+    padding: 20px;
+    background-color: #06283D;
     display: flex;
     justify-content: space-evenly;
-    margin: 20px 0px;
+    margin-bottom: 30px;
 }

@@ -32,9 +32,9 @@ function selectionSortAlgo(n, arr, sp, dispatch) {
             visualizer(i,array[i],"red", c_delay+=speed);//Height 
             visualizer(index_min,array[index_min],"blue", c_delay+=speed);//Color 
         }
-        visualizer(i,array[i],"green", c_delay+=speed);//Color 
+        visualizer(i,array[i],"#47B5FF", c_delay+=speed);//Color 
     }
-    visualizer(i,array[i],"green", c_delay+=speed);//Color 
+    visualizer(i,array[i],"#47B5FF", c_delay+=speed);//Color 
     
     
     setTimeout(() => {

@@ -32,10 +32,10 @@ function insertionSortAlgo(n, arr, sp, dispatch) {
         array[i+1]=key;
 
         for(var t=0;t<j;t++){
-            visualizer(t, array[t], "green", c_delay+=speed);//Color 
+            visualizer(t, array[t], "#47B5FF", c_delay+=speed);//Color 
         }
     }
-    visualizer(j-1, array[j-1], "green", c_delay+=speed);//Color 
+    visualizer(j-1, array[j-1], "#47B5FF", c_delay+=speed);//Color 
     
     setTimeout(() => {
         dispatch(sortingUpdate(false));

@@ -38,7 +38,7 @@ function merge_sort(start,mid,end, array){
 
     for(var t=0;t<k;t++){
         array[start++]=temp_arr[t];
-        visualizer(start-1,array[start-1],"green", c_delay+=speed);//Color 
+        visualizer(start-1,array[start-1],"#47B5FF", c_delay+=speed);//Color 
     }
 }
 

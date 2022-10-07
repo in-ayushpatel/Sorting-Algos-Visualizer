@@ -56,7 +56,7 @@ function quick_partition (start, end, array) {
     visualizer(i-1, array[i-1], "red", c_delay+=speed);//Height 
 
     for(var t=start;t<=i;t++){
-        visualizer(t, array[t], "green", c_delay+=speed);//Color 
+        visualizer(t, array[t], "#47B5FF", c_delay+=speed);//Color 
     }
     //return position of pivot
     return i-1;
